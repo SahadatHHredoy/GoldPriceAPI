@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Altannak</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon1.png">
+	<script type="text/javascript">
+
+			var image1 = new Image()
+			image1.src = "images/slider/slide1.jpg"
+			var image2 = new Image()
+			image2.src = "images/slider/slide2.jpg"
+			var image3 = new Image()
+			image3.src = "images/slider/slide3.jpg"
+			</script>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.container{
+			width:1300px;
+			height: auto;
+			margin: 0 auto;
+		}
+		.header{}
+		.logo{
+			text-align: center;
+			}
+		.content-header{
+			height: 75px;
+		}
+		.content-header-left{
+			float:left;
+			width:350px;
+			margin:0 auto;
+			text-align: center;
+		}
+		.content-header-center{
+			font-size: 20px;
+			float:left;
+			width:350px;
+		}
+		.content-header-right{
+			font-size: 20px;
+			float:left;
+			width: 580px;
+			font-weight:bold;
+		}
+		.content-header-right-price{
+			width:280px;
+			float: left;
+			margin-left: 20px;
+		}
+		.content-header-right-date{
+			width:260px;
+			float: right;
+			margin-left: 20px;
+		}
+		.content-area{}
+		.content-area-left{
+			float: left;
+			width: 600px;
+			height: 400px;
+		}
+		.content-box{
+			float:right;
+			width: 280px;
+			height: 150px;
+			font-size: 20px;
+			background: url('b-bg.jpg');
+			margin: 0 0 20px 20px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border: 1px solid #FFF;
+		}
+		.content-box h3{
+			text-align:center;
+			font-weight: bolder;
+			padding-top: 35px;
+			color: #FFF;
+		}
+		.content-box h4{
+			text-align:center;
+			font-weight: bolder;
+			}
+		.content-box p{
+			text-align:center;
+		}
+		.text-title{
+		}
+		.text-box{
+			margin: 0 auto;
+			padding: 7px;
+			width: 105px;
+			background-color: #FFFFFF;
+		}
+		.last-update{
+			font-size: 14px;
+			font-weight:bold;
+			
+		}
+		.content-area-bottom{
+			float: right;
+			width: 580px;
+			height: 70px;
+			margin: 0 0 0 20px;
+		}
+		.text-left{
+			font-size: 18px;
+			float:left;
+			width: 280px;
+			margin-bottom: 10px;
+			margin:5px 0 0 10px;
+		}
+		.text-right{
+			font-size: 18px;
+			float:left;
+			margin-left: 20px;
+			width: 280px;
+			margin-bottom: 10px;
+			margin:5px 0 0 10px;
+		}
+		p{
+			margin-top: 5px;
+			font-size: 12px;
+			}
+	</style>
+	<!-- js -->
+   <script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+	
+	<div class="container">
+		<div class="header">
+			<div class="logo">
+				<img src="logo.png" width="185" height="85" alt="logo"/>
+			</div>
+		</div>
+		<div class="content-header">
+			<div class="content-header-left">
+				<span style="font-weight:bold">WE ACCEPT</span><br/>
+				<a target="_blank" href="https://payleq8.com/ar/Paylegateway/bypassgallary/6fa320a806eabb0139d334eac4461efe2fd83ef2"><img src="payle.png" width="75" height="45" alt="logo"/></a>
+			</div>
+			<div class="content-header-center"  style="font-weight:bold">
+				<span><img src="Phone.png" width="15" height="15" alt="logo"/> Shop-66 +965 5533 5509<br/>
+				<img src="Phone.png" width="15" height="15" alt="logo"/> Shop-73 +965 6777 1662<br/>
+				<img src="msg.png" width="15" height="15" alt="logo"/> support@altanak.com </span>
+			</div>
+			<div class="content-header-right">
+				<div class="content-header-right-price">
+					<span id="price" style="font-size: 28px;"></span>
+				</div>
+				<div class="content-header-right-date">
+					<span id="dateTime" style="font-size: 28px;"></span>
+				</div>
+			</div>
+		</div>
+		<div class="content-area">
+			<div class="content-area-left">
+			<div class="slider">
+					<img src="images/slider/slide1.jpg" width="700" height="410" name="slide" class="img-responsive">
+							<script type="text/javascript">
+							<!--
+							var step=1
+							function slideit() {
+							document.images.slide.src=eval("image"+step+".src")
+							if(step<3)
+							step++
+							else
+							step=1
+							setTimeout("slideit()",2500)
+							}
+
+							slideit()
+
+							//-->
+							</script>
+			
+				</div>
+				<!--<img src="slider.jpg" width="600" height="400" alt="logo"/>-->
+			</div>
+			<div class="content-area-right">
+				
+				<div class="content-box">
+					<h3 class="text-title">22 Caret</h3>
+					<h4 id="22caret" class="text-box"></h4>
+					<p class="last-update"></p>
+				</div>
+				<div class="content-box">
+					<h3 class="text-title">24 Caret</h3>
+					<h4 id="24caret" class="text-box"></h4>
+					<p class="last-update"></p>
+				</div>
+			
+				<div class="content-box">
+					<h3 class="text-title">18 Caret</h3>
+					<h4 id="18caret" class="text-box"></h4>
+					<p class="last-update"></p>
+				</div>
+					<div class="content-box">
+					<h3 class="text-title">21 Caret</h3>
+					<h4 id="21caret" class="text-box"></h4>
+					<p class="last-update"></p>
+				</div>
+				<div class="content-area-bottom" style="background:#ACACAC;  border-radius: 20px; font-weight:bold">
+					<div class="text-left"><img src="Instagram.png" width="15" height="15" alt="logo"/><a style="text-decoration:none;" target="_blank" href="https://www.instagram.com/shbkat/"> /Shbkat</a></div>
+					<div class="text-right"><img src="Snapchat_logo.png" width="15" height="15" alt="logo"/><a style="text-decoration:none;" target="_blank" href="https://www.snapchat.com/"> <span style="font-size:14px;">ALTANNAK_J</span></a></div>
+					<span style="padding:7px 0 0 10px;margin-top:5px;">Shop Address: Mubrakeya,Gold Market,Ali Al-selam st,</span><br>
+					<span style="margin-left: 110px;">Kuwait City,Kuwait.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+
+			$(document).ready(function()
+			{
+				LoadData();  
+				setInterval(function() {
+				var d = new Date();
+				 $("#dateTime").html(d.toLocaleString('en-US', { second:'numeric',minute:'numeric', hour: 'numeric', hour12: true })+'<br/>'+d.toDateString());
+				}, 1000);
+
+				
+				setInterval(function() {
+				 LoadData();
+				}, 60000);
+			});
+			
+			
+			function LoadData(){
+			$.ajax({
+						  url: 'https://data-asg.goldprice.org/dbXRates/USD',  
+						  success: function(json) {
+							  var d = new Date();
+							  $(json.items).each(function(){
+								var price =  this["xauPrice"];
+								$("#price").html('$ '+price.toFixed('2')+'<br/>USD Per Ounce')
+							  });
+							  console.log(d.toLocaleString('en-US', { second:'numeric',minute:'numeric', hour: 'numeric', hour12: true }));
+							},
+							error:function(error){
+							  console.log(error);
+						}
+					});
+			   
+				$.ajax({
+					  url: 'https://data-asg.goldprice.org/dbXRates/KWD',  
+					  success: function(json) {
+						  var d = new Date();
+						  $(json.items).each(function(){
+							var price =  (this["xauPrice"]/31.10);
+							$("#24caret").html(price.toFixed('2')+" KWD");
+							$("#22caret").html((price * (22/24)).toFixed('2')+" KWD");
+							$("#21caret").html((price * (21/24)).toFixed('2')+" KWD");
+							$("#18caret").html((price * (18/24)).toFixed('2')+" KWD");
+							$(".last-update").html("Last Updated On "+d.toLocaleString('en-US', {minute:'numeric', hour: 'numeric', hour12: true }))
+						  });
+						  console.log(d.toLocaleString('en-US', { second:'numeric',minute:'numeric', hour: 'numeric', hour12: true }));
+						},
+						error:function(error){
+						  console.log(error);
+						}
+				});
+			
+			
+			}
+  </script>
+  </body>
+  </html>
